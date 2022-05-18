@@ -1,22 +1,31 @@
-[data-type] {
-    width: 30px;
-    aspect-ratio: 1 / 1;
-    margin: 8px;
-}
+
 
 .container {
-    display: flex;
+    width: 800px;
+    aspect-ratio: 1 / 1;
+    border-bottom: 1px solid black;
+    border-left: 1px solid black;
 }
 
-.column {
+
+.gridItem {
+    border-top: 1px solid black;
+    border-right: 1px solid black;
+}
+
+.selected {
+    background-color: red;
+}
+
+body {
     display: flex;
     flex-direction: column;
+    align-items: center;
+    width: 100%;
+    gap: 20px;
 }
 
-.row {
-    background-color: black;
-}
-
-.row-selected {
-    background-color: red;
+.reset {
+    width: 100px;
+    align-self: center;
 }
